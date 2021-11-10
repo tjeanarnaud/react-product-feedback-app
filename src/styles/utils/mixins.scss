@@ -1,0 +1,32 @@
+// 375px, 768px, 1440px
+$breakpoints-up: (
+	'sm': '23.438em',
+	'md': '48em',
+	'lg': '90em',
+);
+
+// 374px, 767px, 1399px
+$breakpoints-down: (
+	'sm': '23.375em',
+	'md': '47.938em',
+	'lg': '89.938em',
+);
+
+@mixin breakpoint($size) {
+	@media (min-width: map-get($breakpoints-up, $size)) {
+		@content;
+	}
+}
+
+@mixin breakpoint-down($size) {
+	@media (max-width: map-get($breakpoints-down, $size)) {
+		@content;
+	}
+}
+
+@mixin sidebar-block {
+	background-color: white;
+	border-radius: 10px;
+	padding: 24px;
+	margin-bottom: rem(24);
+}

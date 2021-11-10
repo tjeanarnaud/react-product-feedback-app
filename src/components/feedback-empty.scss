@@ -1,0 +1,26 @@
+@import '../styles/utils/functions.scss';
+@import '../styles/utils/mixins.scss';
+
+.feedback-empty {
+	display: flex;
+	justify-content: center;
+	padding: rem(100) 0 !important;
+
+	section {
+		width: 410px;
+		height: 379px;
+		text-align: center;
+
+		& > svg {
+			margin-bottom: rem(55);
+		}
+
+		& > h1 {
+			margin-bottom: rem(16);
+		}
+
+		& > p {
+			margin-bottom: rem(48);
+		}
+	}
+}

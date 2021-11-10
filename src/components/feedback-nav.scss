@@ -1,0 +1,27 @@
+@import '../styles/utils/functions.scss';
+@import '../styles/utils/mixins.scss';
+
+.nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--purple-navy) !important;
+	padding: rem(16) !important;
+
+	& > div {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		h3 {
+			color: white;
+			margin-left: rem(15);
+			margin-right: rem(30);
+		}
+	}
+
+	& > a {
+		text-decoration: none;
+	}
+}

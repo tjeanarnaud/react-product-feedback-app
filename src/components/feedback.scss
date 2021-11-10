@@ -1,0 +1,43 @@
+@import '../styles/utils/functions.scss';
+@import '../styles/utils/mixins.scss';
+
+.feedback {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 40px;
+
+	&__content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+
+		& > h3 {
+			margin-bottom: rem(5);
+			transition: all 150ms ease-out;
+		}
+
+		& > p {
+			margin-bottom: rem(12);
+		}
+	}
+
+	&__comment {
+		align-self: center;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+
+		span {
+			color: var(--purple-navy-2);
+			font-weight: var(--fw-bold);
+		}
+	}
+
+	&:hover {
+		h3 {
+			color: var(--marine-blue);
+		}
+	}
+}

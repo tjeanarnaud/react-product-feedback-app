@@ -1,0 +1,71 @@
+@import '../utils/functions.scss';
+@import '../utils/mixins.scss';
+
+.btn {
+	font-family: var(--font-base);
+	font-weight: var(--fw-bold);
+	font-size: rem(14);
+	padding: rem(10) rem(24);
+	border-radius: 10px;
+	border: none;
+
+	& > svg {
+		margin-right: 2px;
+	}
+
+	&.btn-default {
+		color: var(--light-gray);
+		background-color: var(--purple);
+		transition: all 150ms ease-out;
+
+		&:hover {
+			background-color: var(--purple-hover);
+		}
+	}
+
+	&.btn-blue {
+		color: var(--light-gray);
+		background-color: var(--marine-blue);
+		transition: all 150ms ease-out;
+
+		&:hover {
+			background-color: var(--marine-blue-hover);
+		}
+	}
+
+	&.btn-navy {
+		color: var(--light-gray);
+		background-color: var(--purple-navy);
+		transition: all 150ms ease-out;
+
+		&:hover {
+			background-color: var(--purple-navy-hover);
+		}
+	}
+
+	&.btn-red {
+		color: var(--light-gray);
+		background-color: var(--rose-madder);
+		transition: all 150ms ease-out;
+
+		&:hover {
+			background-color: var(--rose-madder-hover);
+		}
+	}
+
+	&.btn-link {
+		background-color: transparent;
+		color: var(--blue-yonder);
+		border-radius: 0;
+		border: none;
+		padding: 0;
+
+		&.default {
+			color: var(--light-gray);
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

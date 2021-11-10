@@ -1,0 +1,84 @@
+@import '../styles/utils/functions.scss';
+@import '../styles/utils/mixins.scss';
+
+.dropdown {
+	position: relative;
+	width: auto;
+
+	&__label {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		transition: all 0.2s ease-in-out;
+		cursor: pointer;
+
+		span {
+			color: var(--lighter-gray);
+			font-size: rem(14);
+			opacity: 0.75;
+		}
+
+		svg {
+			margin-left: 1rem;
+
+			& > path {
+				stroke: white;
+			}
+		}
+	}
+
+	&__list {
+		position: absolute;
+		z-index: 10;
+		top: 60px;
+		width: rem(255);
+		border-radius: 10px;
+		background-color: white;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+			rgba(0, 0, 0, 0.05) 0px 5px 10px;
+		visibility: visible;
+
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 48px;
+			color: var(--blue-yonder);
+			border-bottom: 1px solid var(--light-gray);
+			padding: rem(12) rem(30);
+			cursor: pointer;
+			transition: all 250ms ease-in-out;
+
+			&.active {
+				color: var(--purple);
+			}
+
+			&:hover {
+				color: var(--purple);
+			}
+
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+
+	&__item {
+		height: 48px;
+		color: var(--blue-yonder);
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid var(--purple-navy-2);
+		padding: 0 2.2rem;
+
+		&:hover {
+			color: var(--purple);
+		}
+
+		&:last-child {
+			border: none;
+		}
+	}
+}

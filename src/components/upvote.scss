@@ -1,0 +1,37 @@
+@import '../styles/utils/functions.scss';
+@import '../styles/utils/mixins.scss';
+
+.upvote {
+	width: 40px;
+	color: white;
+	text-align: center;
+	padding: rem(8) 0;
+	border-radius: 10px;
+	border: none;
+	transition: all 150ms ease-out;
+
+	div {
+		color: var(--purple-navy-2);
+		font-family: var(--font-base);
+		font-weight: var(--fw-bold);
+		font-size: rem(13);
+		letter-spacing: -0.18px;
+		margin-top: rem(3);
+	}
+
+	&:hover {
+		background-color: var(--purple-navy-3-hover);
+	}
+
+	&.active {
+		background-color: var(--marine-blue) !important;
+
+		& > svg > path {
+			stroke: white;
+		}
+
+		& > div {
+			color: white;
+		}
+	}
+}

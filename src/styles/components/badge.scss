@@ -1,0 +1,24 @@
+@import '../utils/functions.scss';
+@import '../utils/mixins.scss';
+
+.badge {
+	background-color: var(--light-gray);
+	display: inline-block;
+	color: var(--marine-blue);
+	font-size: rem(13);
+	font-weight: var(--fw-smbold);
+	line-height: rem(19);
+	padding: rem(5.5) rem(16.6);
+	border-radius: 10px;
+	border: none;
+	transition: all 150ms ease-out;
+
+	&:hover {
+		background-color: var(--purple-navy-3-hover);
+	}
+
+	&.active {
+		background-color: var(--marine-blue) !important;
+		color: white;
+	}
+}

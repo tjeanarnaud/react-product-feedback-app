@@ -1,0 +1,8 @@
+@import '../styles/utils/functions.scss';
+@import '../styles/utils/mixins.scss';
+
+.badges {
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(15) rem(10);
+}
