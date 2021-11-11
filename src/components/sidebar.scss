@@ -1,18 +1,13 @@
 @import '../styles/utils/functions.scss';
 @import '../styles/utils/mixins.scss';
 
-.sidebar {
-	grid-area: sidebar;
+.home-sidebar {
 	width: 255px;
 	position: fixed;
 	z-index: 1;
 	top: 80px;
 
-	& > div {
-		@include sidebar-block;
-	}
-
-	.header {
+	&__header {
 		height: 137px;
 		display: flex;
 		flex-direction: column;
@@ -33,13 +28,13 @@
 		}
 	}
 
-	.categories {
+	&__section_one {
 		display: flex;
 		flex-wrap: wrap;
 		gap: rem(15) rem(10);
 	}
 
-	.roadmap {
+	&__section_two {
 		margin-bottom: 0;
 
 		header {

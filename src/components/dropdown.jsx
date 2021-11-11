@@ -42,7 +42,7 @@ const Dropdown = () => {
 					{data.map((item, index) => (
 						<li
 							key={index}
-							id={item.id}
+							id={index}
 							className={selectedId === index ? 'active' : ''}
 							onClick={() => handleItemClick(index)}
 						>

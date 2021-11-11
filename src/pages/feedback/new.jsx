@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './feedback-new.scss'
+import './new.scss'
 
 const FeedbackNew = () => {
 	return (

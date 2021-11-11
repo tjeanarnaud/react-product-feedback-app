@@ -24,16 +24,9 @@ body {
 #root {
 	background-color: var(--light-gray);
 	width: 100vw;
-	height: 100%;
+	min-height: 100vmin;
 	padding: rem(80) 0;
 	margin: 0;
-
-	.page {
-		position: relative;
-		width: 100%;
-		max-width: rem(1110);
-		margin: 0 auto;
-	}
 }
 
 h1,
@@ -74,13 +67,13 @@ p {
 	line-height: rem(23);
 
 	// Heading 2 - Jost Regular  |  15px; 22px Line
-	.heading-2 {
+	&.body-2 {
 		font-size: rem(15);
 		line-height: rem(22);
 	}
 
 	// Heading 3 - Jost Semibold  |  13px; 19px Line
-	.heading-3 {
+	&.body-3 {
 		font-size: rem(13);
 		line-height: rem(19);
 	}

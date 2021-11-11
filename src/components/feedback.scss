@@ -2,10 +2,25 @@
 @import '../styles/utils/mixins.scss';
 
 .feedback {
+	background-color: white;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
+	border-radius: 10px;
 	gap: 40px;
+	padding: rem(28) rem(32);
+	margin-bottom: rem(24);
+	cursor: pointer;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:hover {
+		h3 {
+			color: var(--marine-blue);
+		}
+	}
 
 	&__content {
 		flex: 1;
@@ -32,12 +47,6 @@
 		span {
 			color: var(--purple-navy-2);
 			font-weight: var(--fw-bold);
-		}
-	}
-
-	&:hover {
-		h3 {
-			color: var(--marine-blue);
 		}
 	}
 }

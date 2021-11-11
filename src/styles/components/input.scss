@@ -1,0 +1,19 @@
+@import '../utils/functions.scss';
+@import '../utils/mixins.scss';
+
+textarea {
+	width: 100%;
+	background-color: VAR(--lighter-gray);
+	color: var(--purple-navy-2);
+	font-family: var(--font-base);
+	font-size: rem(15);
+	padding: rem(17) rem(24);
+	border-radius: 5px;
+	border: 1px solid transparent;
+	outline: none;
+	transition: all 250ms ease-out;
+
+	&:focus {
+		border: 1px solid var(--marine-blue);
+	}
+}

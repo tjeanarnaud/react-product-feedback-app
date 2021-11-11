@@ -1,0 +1,62 @@
+@import '../styles/utils/functions.scss';
+@import '../styles/utils/mixins.scss';
+
+.reply {
+	margin-left: rem(20);
+
+	&:last-child > p {
+		padding-bottom: 0;
+		border-left: none;
+	}
+
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(24);
+		border-left: 1px solid var(--comment-border-bottom);
+		padding-left: rem(24);
+
+		&__user_image {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		&__user_info {
+			flex: 1;
+
+			h4 {
+				&:last-child {
+					color: var(--blue-yonder);
+					font-weight: normal;
+				}
+			}
+		}
+
+		&__user_reply {
+			color: var(--marine-blue);
+			font-family: var(--font-base);
+			font-size: rem(13) !important;
+			font-weight: bold;
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+	&-content {
+		padding-top: rem(16);
+		padding-left: rem(88);
+		padding-bottom: rem(32);
+		border-left: 1px solid var(--comment-border-bottom);
+
+		span {
+			color: var(--purple);
+			font-weight: var(--fw-bold);
+			margin-right: rem(10);
+		}
+	}
+}

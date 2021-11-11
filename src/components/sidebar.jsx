@@ -5,13 +5,13 @@ import '../styles/components/badge.scss'
 
 const Sidebar = ({ status }) => {
 	return (
-		<div className='sidebar'>
-			<div className='header'>
+		<div className='home-sidebar'>
+			<div className='home-sidebar__header'>
 				<h2>Frontend Mentor</h2>
 				<span>Feedback Board</span>
 			</div>
 
-			<div className='categories'>
+			<div className='home-sidebar__section_one'>
 				<button className='badge active'>All</button>
 				<button className='badge'>UI</button>
 				<button className='badge'>UX</button>
@@ -20,7 +20,7 @@ const Sidebar = ({ status }) => {
 				<button className='badge'>Feature</button>
 			</div>
 
-			<div className='roadmap'>
+			<div className='home-sidebar__section_two'>
 				<header>
 					<h3>Roadmap</h3>
 					<Link to='/roadmap'>View</Link>

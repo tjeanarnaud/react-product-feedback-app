@@ -1,0 +1,56 @@
+@import '../styles/utils/functions.scss';
+@import '../styles/utils/mixins.scss';
+
+.comment {
+	padding-top: rem(32);
+	border-bottom: 1px solid var(--comment-border-bottom);
+
+	&:last-child {
+		padding-bottom: 0;
+		border: none;
+	}
+
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(24);
+		margin-bottom: rem(16);
+
+		&__user_image {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		&__user_info {
+			flex: 1;
+
+			h4 {
+				&:last-child {
+					color: var(--blue-yonder);
+					font-weight: normal;
+				}
+			}
+		}
+
+		&__user_reply {
+			color: var(--marine-blue);
+			font-family: var(--font-base);
+			font-size: rem(13) !important;
+			font-weight: bold;
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+	&-content {
+		// border-left: 1px solid var(--comment-border-bottom);
+		padding-left: rem(44);
+		padding-bottom: rem(32);
+		margin-left: rem(20);
+	}
+}

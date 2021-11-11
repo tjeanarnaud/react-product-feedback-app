@@ -1,0 +1,24 @@
+@import '../../styles/utils/functions.scss';
+@import '../../styles/utils/mixins.scss';
+
+.detail {
+	width: 100%;
+	max-width: rem(730);
+	position: relative;
+	margin: 0 auto;
+
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: rem(24);
+	}
+
+	&-content {
+		& > div {
+			background-color: white;
+			border-radius: 10px;
+			padding: rem(28) rem(32);
+		}
+	}
+}

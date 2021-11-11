@@ -8,6 +8,7 @@
 	padding: rem(10) rem(24);
 	border-radius: 10px;
 	border: none;
+	cursor: pointer;
 
 	& > svg {
 		margin-right: 2px;
@@ -56,12 +57,23 @@
 	&.btn-link {
 		background-color: transparent;
 		color: var(--blue-yonder);
-		border-radius: 0;
-		border: none;
-		padding: 0;
+		border-radius: 0 !important;
+		border: none !important;
+		padding: 0 !important;
+
+		& > svg {
+			margin-right: rem(8);
+			& > path {
+				stroke: var(--blue-yonder);
+			}
+		}
 
 		&.default {
 			color: var(--light-gray);
+		}
+
+		&.blue {
+			color: var(--marine-blue);
 		}
 
 		&:hover {

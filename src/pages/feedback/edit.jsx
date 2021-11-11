@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './feedback-edit.scss'
+import './edit.scss'
 
 const FeedbackEdit = () => {
 	return (
